@@ -1,0 +1,36 @@
+/* frontend/src/components/CardItems.css */
+.card-img-top {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.button {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.custom-button {
+  flex: 1;
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .custom-button {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+}
